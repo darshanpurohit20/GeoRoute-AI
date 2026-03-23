@@ -31,7 +31,6 @@ export default function GeoRouteApp() {
         lng: coord.lng,
         type: "pin",
       };
-
       if (mapClickTargetRef.current === "source" || !state.source) {
         setState((prev) => ({ ...prev, source: loc }));
         mapClickTargetRef.current = "destination";
