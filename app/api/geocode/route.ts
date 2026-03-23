@@ -42,7 +42,6 @@ export async function GET(request: Request) {
         address: item.address,
       })
     );
-
     return NextResponse.json({ results });
   } catch (error) {
     console.error("Geocoding error:", error);
